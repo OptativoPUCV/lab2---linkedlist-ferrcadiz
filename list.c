@@ -65,8 +65,6 @@ void pushFront(List * list, void * data) {
   newNodo -> prev = NULL;
   
   list -> tail = newNodo;
-  }
-  
 }
 
 void pushBack(List * list, void * data) {
