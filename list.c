@@ -55,14 +55,14 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  Node* n =createNode(data);
-  n -> next = list -> head;
+  Node* newNodo =createNode(data);
+  newNodo -> next = list -> head;
 
   if(list -> head){
-    list -> head -> prev = n;
+    list -> head -> prev = newNodo;
   }
-  list -> head = n;
-  list -> prev = NULL;
+  list -> head = newNodo;
+  newNodo -> prev = NULL;
   list -> tail++;
 }
 
