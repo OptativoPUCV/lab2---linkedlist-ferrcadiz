@@ -71,3 +71,21 @@ Thu 24 Aug 2023 08:41:27 PM UTC:
  tests:  2|4
 total_score: 20/70
 388b566
+Thu 24 Aug 2023 08:53:31 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:33: error: expected ‘;’ before ‘}’ token
+   44 |   list -> current = list -> head
+      |                                 ^
+      |                                 ;
+   45 | 
+   46 | }
+      | ~                                
+list.c:46:1: error: control reaches end of non-void function [-Werror=return-type]
+   46 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+37cbf41
