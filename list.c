@@ -130,6 +130,7 @@ void * popCurrent(List * list) {
 
   if(list -> current -> next != NULL){
     list -> current -> next -> prev = list -> current -> prev;
+    list -> current -> prev -> next = list -> current -> next;
     list -> current = list -> current -> next;
   }
   else{
@@ -137,7 +138,6 @@ void * popCurrent(List * list) {
     list -> current = NULL;
   }
 }
-
 void cleanList(List * list) {
     while (list->head != NULL) {
         popFront(list);
