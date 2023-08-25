@@ -120,10 +120,11 @@ void * popBack(List * list) {
 //6. Programe la función `void* popCurrent(List * list)`, la cual elimina el nodo que está en la posición del current de la lista enlazada, y además retorna el **dato** del nodo eliminado.
 // **Nota**: El current debe quedar apuntando al nodo siguiente del eliminado.
 void * popCurrent(List * list) {
-  list -> current = list -> current -> prev;
   
   list -> current -> prev -> next = list -> current -> next;
 
+  list -> current = list -> current -> next;
+  
   return list -> current -> data;
 }
 
