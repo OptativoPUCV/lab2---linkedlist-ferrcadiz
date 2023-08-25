@@ -204,3 +204,13 @@ list.c:69:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 64c5140
+Fri 25 Aug 2023 03:25:15 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:70:15: error: expected identifier before ‘)’ token
+   70 |   if(!list -> ) return NULL;
+      |               ^
+Compilation failed
+3cc9f5b
