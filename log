@@ -373,3 +373,14 @@ list.c:142:6: error: ‘cleanList’ defined but not used [-Werror=unused-functi
 cc1: all warnings being treated as errors
 Compilation failed
 1b3b0f4
+Fri 25 Aug 2023 04:49:11 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d5134b2
