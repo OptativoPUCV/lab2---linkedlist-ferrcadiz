@@ -140,3 +140,9 @@ list.c:70:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attrib
 list.c:70:6: error: unknown type name ‘segunda’
 Compilation failed
 9cfcc86
+Fri 25 Aug 2023 02:57:21 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|3
+total_score: 35/70
+0f47e61
