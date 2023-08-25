@@ -61,7 +61,7 @@ La primera retorna el dato del último elemento en la lista y actualiza el curre
 
 void * lastList(List * list) {
 
-  list -> current = list -> head
+  list -> current = list -> head;
     
   return list -> current -> data;
 }
