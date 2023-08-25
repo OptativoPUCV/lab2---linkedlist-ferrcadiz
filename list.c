@@ -135,6 +135,7 @@ void * popCurrent(List * list) {
   }
   else{
     list -> tail = list -> current -> prev;
+    list -> current = NULL;
   }
   
   return list -> current -> data;
