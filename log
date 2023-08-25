@@ -187,3 +187,20 @@ list.c:75:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 3574ed3
+Fri 25 Aug 2023 03:24:37 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:70:15: error: expected identifier before ‘)’ token
+   70 |   if(!list -> ) return NULL;
+      |               ^
+list.c:74:3: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   74 |   return ;
+      |   ^~~~~~
+list.c:69:8: note: declared here
+   69 | void * prevList(List * list) {
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+64c5140
